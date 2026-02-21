@@ -1,42 +1,105 @@
-header img{
-    width: 10%;
+.resultsRow{
+  align-items: center;
 }
-
-Header{
-    background-color: rgb(152, 211, 156);
+table.results
+{
+    border-collapse: collapse;
+    border: solid 1px #aaa;
 }
-
-H1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.results th
+{
+    border: solid 1px #aaa;
+    background: #efefef;
     text-align: center;
 }
 
-ul{
-    list-style-type: none;
+.results tr.resultsRow td
+{
+    border: solid 1px #aaa;
+}
+
+.resultsRow td
+{
+    text-align: center;
+}
+
+
+
+header ul{
+     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
 
 }
 
-nav{
-    display: inline-block;
-    width: 80%;
+header li{
+    text-decoration:none;
+	background-color: #ffffff; 
+	color:#ffffff;
+	box-sizing:border-box;
+
+	
+	width: 5%;
+	height: 50px;
+	margin:5px;
+	border: 5px solid #000000;
+	padding: 15px;
+    margin: 0 auto;
+	margin-top: 50px;
+    text-align:center;
+
+    transition-property: color, 
+  	    width, background, border-radius;
+    transition-duration: .2s;
+  	transition-timing-function: linear;
+  	transition-delay: .2s;
 }
 
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    width: 60%;
-    column-gap: 1%;
+header li:hover {
+			color: #ffffff;
+			background: #25e0ea;
+  			border-radius: 50%;
+		        }
+
+header li:active {
+	    color: #000000;
+		background: #cf42eb;
+		    }
+
+.current{
+ text-transform: uppercase; 
+ 	background-color: #0ecc00; 
+}
+
+main{
+    text-align: center;
+}
+
+h1 {
+    font-family: arial, 'Times New Roman', Times, serif;
+    font-size: 40px;
 }
 
 .images img{
     width: 100%;
+	background-color: #f46642; 
+	color:#ffffff;
+	box-sizing:border-box;
+
+	margin:5px;
+	border: 5px solid #f7bc5d;
+	padding: 15px;
+    margin: 0 auto;
+	margin-top: 50px;
+    text-align:center;
+    border-radius: 5px;
+
+	
+
 }
 
-.current{
- text-transform: uppercase; 
+.images img:nth-child(2n+1){
+    border: 8px dotted blue;
 }
 
 .images{
@@ -48,5 +111,27 @@ nav{
     align-items: center;
     column-gap: 1%;
 
+ 
+
 }
 
+
+
+
+
+
+
+
+/*
+Body {
+    background-image: url("../images/forrest.jpg"); 
+    
+    background-size: 200px;
+    background-color: rgb(193, 255, 127);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0,5; 
+    
+}
+*/
